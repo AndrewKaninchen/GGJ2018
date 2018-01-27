@@ -224,6 +224,61 @@ GameObject:
   m_PrefabParentObject: {fileID: 1703807387416672, guid: d7e4d9e2b190e6d4f9c641685d00bb4c,
     type: 2}
   m_PrefabInternal: {fileID: 1374347475}
+--- !u!1001 &1355865682
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4816583613247002, guid: d7e4d9e2b190e6d4f9c641685d00bb4c, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 9.012942
+      objectReference: {fileID: 0}
+    - target: {fileID: 4816583613247002, guid: d7e4d9e2b190e6d4f9c641685d00bb4c, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4816583613247002, guid: d7e4d9e2b190e6d4f9c641685d00bb4c, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 3.098296
+      objectReference: {fileID: 0}
+    - target: {fileID: 4816583613247002, guid: d7e4d9e2b190e6d4f9c641685d00bb4c, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4816583613247002, guid: d7e4d9e2b190e6d4f9c641685d00bb4c, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0.9914448
+      objectReference: {fileID: 0}
+    - target: {fileID: 4816583613247002, guid: d7e4d9e2b190e6d4f9c641685d00bb4c, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4816583613247002, guid: d7e4d9e2b190e6d4f9c641685d00bb4c, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: -0.13052678
+      objectReference: {fileID: 0}
+    - target: {fileID: 4816583613247002, guid: d7e4d9e2b190e6d4f9c641685d00bb4c, type: 2}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1703807387416672, guid: d7e4d9e2b190e6d4f9c641685d00bb4c, type: 2}
+      propertyPath: m_Name
+      value: Bot (Player) (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4816583613247002, guid: d7e4d9e2b190e6d4f9c641685d00bb4c, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 194.99998
+      objectReference: {fileID: 0}
+    - target: {fileID: 114606307806065002, guid: d7e4d9e2b190e6d4f9c641685d00bb4c,
+        type: 2}
+      propertyPath: startAsPlayer
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: d7e4d9e2b190e6d4f9c641685d00bb4c, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1001 &1374347475
 Prefab:
   m_ObjectHideFlags: 0
