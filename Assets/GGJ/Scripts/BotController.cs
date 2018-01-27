@@ -13,6 +13,8 @@ public class BotController : MonoBehaviour {
     }
 
     #region Components
+    private BotStatsHolder statsHolder;
+
     private CharacterController p_cController;
     private FirstPersonController p_fpController;
     private PlayerController p_playerController;
@@ -39,6 +41,8 @@ public class BotController : MonoBehaviour {
             ChangeState(ControlState.Player);
         else
             ChangeState(ControlState.AI);
+
+        SetMoveStats();
     }
 
     public void ChangeState(ControlState state)
@@ -63,5 +67,11 @@ public class BotController : MonoBehaviour {
             ai_AIMoveController.enabled = true;
             currentController = ControlState.AI;
         }
+    }
+
+    private void SetMoveStats()
+    {
+        //ai_navMeshAgent.speed = p_fpController.m_WalkSpeed = statsHolder.moveStats.speed;
+        //p_fpController.m_RunSpeed = statsHolder.moveStats.speed *1.5f;
     }
 }
