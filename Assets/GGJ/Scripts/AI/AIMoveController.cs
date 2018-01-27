@@ -53,10 +53,14 @@ public class AIMoveController : MonoBehaviour
                 }
                 break;
             case States.Pursue:
+                if (target.gameObject != GameManager.currentPlayerControlledBot)
+                { 
+                    currentState = States.Patrol;
+                    agent.SetDestination(transform.position); //forçada de barra
+                    break;
+                }
                 agent.SetDestination(target.transform.position);
                 var movement = agent.desiredVelocity;
-                //ccontroller.SimpleMove(movement);
-                //transform.position = agent.nextPosition;
                 break;
         }
         

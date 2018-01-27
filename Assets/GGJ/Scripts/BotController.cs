@@ -15,9 +15,10 @@ public class BotController : MonoBehaviour {
     #region Components
     private CharacterController p_cController;
     private FirstPersonController p_fpController;
-    
+    private PlayerController p_playerController;
+
     private NavMeshAgent ai_navMeshAgent;
-    private AIMoveController ai_aIMoveController;
+    private AIMoveController ai_AIMoveController;
     #endregion
     private GameObject p_cameraHolder;
 
@@ -29,7 +30,8 @@ public class BotController : MonoBehaviour {
         if (!p_cController) p_cController = GetComponent<CharacterController>();
         if (!p_fpController) p_fpController = GetComponent<FirstPersonController>();
         if (!ai_navMeshAgent) ai_navMeshAgent = GetComponent<NavMeshAgent>();
-        if (!ai_aIMoveController) ai_aIMoveController = GetComponent<AIMoveController>();
+        if (!ai_AIMoveController) ai_AIMoveController = GetComponent<AIMoveController>();
+        if (!p_playerController) p_playerController = GetComponent<PlayerController>();
 
         if (!p_cameraHolder) p_cameraHolder = transform.Find("CameraHolder").gameObject;
 
@@ -44,20 +46,22 @@ public class BotController : MonoBehaviour {
         if (state == ControlState.Player)
         {
             p_cameraHolder.SetActive(true);
+            p_playerController.enabled = true;
             p_cController.enabled = true;
             p_fpController.enabled = true;
             ai_navMeshAgent.enabled = false;
-            ai_aIMoveController.enabled = false;
-            currentController = ControlState.AI;
+            ai_AIMoveController.enabled = false;
+            currentController = ControlState.Player;
         }
         else
         {
             p_cameraHolder.SetActive(false);
+            p_playerController.enabled = false;
             p_cController.enabled = false;
             p_fpController.enabled = false;
             ai_navMeshAgent.enabled = true;
-            ai_aIMoveController.enabled = true;
-            currentController = ControlState.Player;
+            ai_AIMoveController.enabled = true;
+            currentController = ControlState.AI;
         }
     }
 }

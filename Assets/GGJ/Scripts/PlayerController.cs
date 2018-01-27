@@ -29,8 +29,8 @@ public class PlayerController : MonoBehaviour {
             {
                 if (hit.transform.gameObject.tag == "Bot")
                 {
-                    botController.ChangeState(BotController.ControlState.AI);
                     hit.transform.GetComponent<BotController>().ChangeState(BotController.ControlState.Player);
+                    botController.ChangeState(BotController.ControlState.AI);
                 }
             }
             
