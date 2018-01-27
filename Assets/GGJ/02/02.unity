@@ -13702,6 +13702,66 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1252795725}
   m_Mesh: {fileID: 4300328, guid: 03a0c0f5aaa952447807e8269baf8dee, type: 3}
+--- !u!1001 &1263343348
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4927756989248792, guid: 8edf05e55bb3c36458d3352b8c1f98d4, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 7.08
+      objectReference: {fileID: 0}
+    - target: {fileID: 4927756989248792, guid: 8edf05e55bb3c36458d3352b8c1f98d4, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0.69
+      objectReference: {fileID: 0}
+    - target: {fileID: 4927756989248792, guid: 8edf05e55bb3c36458d3352b8c1f98d4, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 3.86
+      objectReference: {fileID: 0}
+    - target: {fileID: 4927756989248792, guid: 8edf05e55bb3c36458d3352b8c1f98d4, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4927756989248792, guid: 8edf05e55bb3c36458d3352b8c1f98d4, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0.9792511
+      objectReference: {fileID: 0}
+    - target: {fileID: 4927756989248792, guid: 8edf05e55bb3c36458d3352b8c1f98d4, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4927756989248792, guid: 8edf05e55bb3c36458d3352b8c1f98d4, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 0.20265062
+      objectReference: {fileID: 0}
+    - target: {fileID: 4927756989248792, guid: 8edf05e55bb3c36458d3352b8c1f98d4, type: 2}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1106208118693294, guid: 8edf05e55bb3c36458d3352b8c1f98d4, type: 2}
+      propertyPath: m_Name
+      value: Bot (Player) (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4927756989248792, guid: 8edf05e55bb3c36458d3352b8c1f98d4, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -156.61601
+      objectReference: {fileID: 0}
+    - target: {fileID: 114262649589825818, guid: 8edf05e55bb3c36458d3352b8c1f98d4,
+        type: 2}
+      propertyPath: startAsPlayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114397634470657042, guid: 8edf05e55bb3c36458d3352b8c1f98d4,
+        type: 2}
+      propertyPath: score
+      value: 
+      objectReference: {fileID: 2053447021}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 8edf05e55bb3c36458d3352b8c1f98d4, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &1276343917
 GameObject:
   m_ObjectHideFlags: 0
@@ -18199,6 +18259,23 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1614309082}
   m_Mesh: {fileID: 4300208, guid: 03a0c0f5aaa952447807e8269baf8dee, type: 3}
+--- !u!1 &1617362628 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1483775865421046, guid: 8edf05e55bb3c36458d3352b8c1f98d4,
+    type: 2}
+  m_PrefabInternal: {fileID: 804937272}
+--- !u!114 &1617362633
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1617362628}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff26db721962cdf4a8edcdfa9a767d2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  profile: {fileID: 11400000, guid: c0336ac110b771e44ba5fcc63f61b815, type: 2}
 --- !u!1 &1621842782
 GameObject:
   m_ObjectHideFlags: 0
@@ -23023,6 +23100,23 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1907721072}
   m_Mesh: {fileID: 4300094, guid: 03a0c0f5aaa952447807e8269baf8dee, type: 3}
+--- !u!1 &1915090629 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1483775865421046, guid: 8edf05e55bb3c36458d3352b8c1f98d4,
+    type: 2}
+  m_PrefabInternal: {fileID: 1263343348}
+--- !u!114 &1915090631
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1915090629}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff26db721962cdf4a8edcdfa9a767d2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  profile: {fileID: 11400000, guid: 47856cf2de9d986479d9e4e2e1c58ee7, type: 2}
 --- !u!1 &1926790100
 GameObject:
   m_ObjectHideFlags: 0
