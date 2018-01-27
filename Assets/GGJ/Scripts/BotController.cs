@@ -41,7 +41,7 @@ public class BotController : MonoBehaviour {
 
     private void ChangeState(ControlState state)
     {
-        if(state == ControlState.Player)
+        if (state == ControlState.Player)
         {
             p_cameraHolder.SetActive(true);
             p_cController.enabled = true;
@@ -60,5 +60,4 @@ public class BotController : MonoBehaviour {
             currentController = ControlState.Player;
         }
     }
-
 }
