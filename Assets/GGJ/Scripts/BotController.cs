@@ -39,7 +39,7 @@ public class BotController : MonoBehaviour {
             ChangeState(ControlState.AI);
     }
 
-    private void ChangeState(ControlState state)
+    public void ChangeState(ControlState state)
     {
         if (state == ControlState.Player)
         {

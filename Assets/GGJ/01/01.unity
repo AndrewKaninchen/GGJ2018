@@ -274,7 +274,11 @@ Prefab:
     - target: {fileID: 114606307806065002, guid: d7e4d9e2b190e6d4f9c641685d00bb4c,
         type: 2}
       propertyPath: startAsPlayer
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1703807387416672, guid: d7e4d9e2b190e6d4f9c641685d00bb4c, type: 2}
+      propertyPath: m_TagString
+      value: Bot
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d7e4d9e2b190e6d4f9c641685d00bb4c, type: 2}
@@ -321,6 +325,20 @@ Prefab:
     - target: {fileID: 1703807387416672, guid: d7e4d9e2b190e6d4f9c641685d00bb4c, type: 2}
       propertyPath: m_Name
       value: Bot (Player)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1703807387416672, guid: d7e4d9e2b190e6d4f9c641685d00bb4c, type: 2}
+      propertyPath: m_TagString
+      value: Bot
+      objectReference: {fileID: 0}
+    - target: {fileID: 114605778003413676, guid: d7e4d9e2b190e6d4f9c641685d00bb4c,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114606307806065002, guid: d7e4d9e2b190e6d4f9c641685d00bb4c,
+        type: 2}
+      propertyPath: startAsPlayer
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d7e4d9e2b190e6d4f9c641685d00bb4c, type: 2}
@@ -379,6 +397,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1703807387416672, guid: d7e4d9e2b190e6d4f9c641685d00bb4c, type: 2}
       propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1703807387416672, guid: d7e4d9e2b190e6d4f9c641685d00bb4c, type: 2}
+      propertyPath: m_TagString
+      value: Bot
+      objectReference: {fileID: 0}
+    - target: {fileID: 114605778003413676, guid: d7e4d9e2b190e6d4f9c641685d00bb4c,
+        type: 2}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -438,7 +465,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1703807387416672, guid: d7e4d9e2b190e6d4f9c641685d00bb4c, type: 2}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1703807387416672, guid: d7e4d9e2b190e6d4f9c641685d00bb4c, type: 2}
+      propertyPath: m_TagString
+      value: Bot
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d7e4d9e2b190e6d4f9c641685d00bb4c, type: 2}
