@@ -1,46 +1,65 @@
 fileFormatVersion: 2
-guid: 702dbece5c821bb4a967c858345371b4
-timeCreated: 1517042197
+guid: b8e863ff7c49bad408b1828af6748b93
+timeCreated: 1517064473
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
-    100000: Box002
-    100002: Pe_L
-    100004: Pe_R001
-    100006: Perna_L_003
-    100008: Perna_L_004
-    100010: Perna_R_003
-    100012: Perna_R_004
-    100014: //RootNode
-    400000: Box002
-    400002: Pe_L
-    400004: Pe_R001
-    400006: Perna_L_003
-    400008: Perna_L_004
-    400010: Perna_R_003
-    400012: Perna_R_004
-    400014: //RootNode
+    100000: Arma
+    100002: Arma_1
+    100004: Box002
+    100006: Corpo
+    100008: Corpo_1
+    100010: Pe_L
+    100012: Pe_L_1
+    100014: Pe_R001
+    100016: Pe_R_1
+    100018: Perna_L_003
+    100020: Perna_L_004
+    100022: Perna_L_1
+    100024: Perna_L_2
+    100026: Perna_R_003
+    100028: Perna_R_004
+    100030: Perna_R_1
+    100032: Perna_R_2
+    100034: //RootNode
+    400000: Arma
+    400002: Arma_1
+    400004: Box002
+    400006: Corpo
+    400008: Corpo_1
+    400010: Pe_L
+    400012: Pe_L_1
+    400014: Pe_R001
+    400016: Pe_R_1
+    400018: Perna_L_003
+    400020: Perna_L_004
+    400022: Perna_L_1
+    400024: Perna_L_2
+    400026: Perna_R_003
+    400028: Perna_R_004
+    400030: Perna_R_1
+    400032: Perna_R_2
+    400034: //RootNode
     2100000: No Name
-    2300000: Pe_L
-    2300002: Pe_R001
-    2300004: Perna_L_003
-    2300006: Perna_L_004
-    2300008: Perna_R_003
-    2300010: Perna_R_004
-    3300000: Pe_L
-    3300002: Pe_R001
-    3300004: Perna_L_003
-    3300006: Perna_L_004
-    3300008: Perna_R_003
-    3300010: Perna_R_004
-    4300000: Perna_L_003
-    4300002: Perna_L_004
-    4300004: Perna_R_003
-    4300006: Perna_R_004
-    4300008: Pe_L
-    4300010: Pe_R001
+    4300000: Corpo_1
+    4300002: Arma_1
+    4300004: Perna_L_003
+    4300006: Perna_L_004
+    4300008: Perna_R_003
+    4300010: Perna_R_004
+    4300012: Pe_L
+    4300014: Pe_R001
+    7400000: Take 001
     9500000: //RootNode
+    13700000: Arma_1
+    13700002: Corpo_1
+    13700004: Pe_L
+    13700006: Pe_R001
+    13700008: Perna_L_003
+    13700010: Perna_L_004
+    13700012: Perna_R_003
+    13700014: Perna_R_004
   externalObjects: {}
   materials:
     importMaterials: 1

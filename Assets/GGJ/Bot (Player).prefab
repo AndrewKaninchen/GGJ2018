@@ -443,13 +443,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1327838194593394}
-  m_LocalRotation: {x: 0.5864255, y: -0.39510208, z: -0.38955826, w: 0.5901219}
+  m_LocalRotation: {x: 0.5390048, y: -0.42320943, z: -0.44184145, w: 0.57891613}
   m_LocalPosition: {x: -0.14756763, y: 0.12607372, z: 0.18020937}
   m_LocalScale: {x: 1, y: 1, z: 0.99999994}
   m_Children: []
   m_Father: {fileID: 4426776053644370}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 14.483001, y: -86.40401, z: -88.313}
 --- !u!4 &4359135436786218
 Transform:
   m_ObjectHideFlags: 1
@@ -631,8 +631,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1106208118693294}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 6.922434, y: 0.71000004, z: -6.276206}
+  m_LocalRotation: {x: -0, y: -0.9792511, z: -0, w: 0.20265062}
+  m_LocalPosition: {x: 9.143575, y: 0.689, z: -1.4938018}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4127019590445764}
@@ -641,7 +641,7 @@ Transform:
   - {fileID: 4203368270753816}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -156.61601, z: 0}
 --- !u!4 &4929484841716832
 Transform:
   m_ObjectHideFlags: 1
@@ -972,7 +972,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1538727540402916}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2967b067d0ba2ee4ca2720f10569440f, type: 3}
   m_Name: 
@@ -1018,8 +1018,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveStats: {fileID: 11400000, guid: 861836fb32edd3c498f4aaad90e5dc64, type: 2}
-  weaponStats: []
   genericStats: {fileID: 11400000, guid: ff522b03520e7e848b6dd19ebf04036d, type: 2}
+  weapons:
+  - {fileID: 114049907260892786}
 --- !u!114 &114346444504715916
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1169,11 +1170,12 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1106208118693294}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1a3e98a3b4f3a9b41a93e1ac828a130b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  weaponTransform: {fileID: 0}
 --- !u!124 &124437838015122214
 Behaviour:
   m_ObjectHideFlags: 1

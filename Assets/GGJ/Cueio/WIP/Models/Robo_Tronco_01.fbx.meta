@@ -1,56 +1,25 @@
 fileFormatVersion: 2
-guid: 6bd40fa8ff0ec694b99a8e91514038bb
-timeCreated: 1517034960
+guid: cae220fca741601469835fff6c50d3d5
+timeCreated: 1517061584
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
     100000: Box001
-    100002: Box002
-    100004: Box021
-    100006: Pe_L
-    100008: Pe_R001
-    100010: Perna_L_003
-    100012: Perna_L_004
-    100014: Perna_R_003
-    100016: Perna_R_004
-    100018: //RootNode
+    100002: Camera
+    100004: Lamp
+    100006: //RootNode
     400000: Box001
-    400002: Box002
-    400004: Box021
-    400006: Pe_L
-    400008: Pe_R001
-    400010: Perna_L_003
-    400012: Perna_L_004
-    400014: Perna_R_003
-    400016: Perna_R_004
-    400018: //RootNode
-    2100000: No Name
+    400002: Camera
+    400004: Lamp
+    400006: //RootNode
+    2000000: Camera
+    2100000: Material.001
     2300000: Box001
-    2300002: Box021
-    2300004: Pe_L
-    2300006: Pe_R001
-    2300008: Perna_L_003
-    2300010: Perna_L_004
-    2300012: Perna_R_003
-    2300014: Perna_R_004
     3300000: Box001
-    3300002: Box021
-    3300004: Pe_L
-    3300006: Pe_R001
-    3300008: Perna_L_003
-    3300010: Perna_L_004
-    3300012: Perna_R_003
-    3300014: Perna_R_004
     4300000: Box001
-    4300002: Box021
-    4300004: Perna_L_003
-    4300006: Perna_L_004
-    4300008: Perna_R_003
-    4300010: Perna_R_004
-    4300012: Pe_L
-    4300014: Pe_R001
     9500000: //RootNode
+    10800000: Lamp
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -70,7 +39,7 @@ ModelImporter:
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
-    animationCompression: 1
+    animationCompression: 3
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
@@ -81,7 +50,7 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 1
+    globalScale: 2
     meshCompression: 0
     addColliders: 0
     importVisibility: 1
@@ -106,7 +75,7 @@ ModelImporter:
     normalImportMode: 0
     tangentImportMode: 3
     normalCalculationMode: 4
-  importAnimation: 1
+  importAnimation: 0
   copyAvatar: 0
   humanDescription:
     serializedVersion: 2
@@ -122,10 +91,10 @@ ModelImporter:
     rootMotionBoneName: 
     rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
     hasTranslationDoF: 0
-    hasExtraRoot: 0
+    hasExtraRoot: 1
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
+  animationType: 0
   humanoidOversampling: 1
   additionalBone: 0
   userData: 

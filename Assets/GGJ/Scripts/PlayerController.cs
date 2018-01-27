@@ -6,6 +6,8 @@ public class PlayerController : MonoBehaviour {
 
     private BotController botController;
     private BotStatsHolder stats;
+    [SerializeField]
+    private Transform weaponTransform;
 
     private Camera cam;
 
@@ -44,7 +46,8 @@ public class PlayerController : MonoBehaviour {
                     botController.ChangeState(BotController.ControlState.AI);
                 }
             }
-            
         }
+
+        //weaponTransform.LookAt(cam.transform.position + cam.transform.forward, Vector3.up);
     }
 }

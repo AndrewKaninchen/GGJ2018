@@ -1,0 +1,188 @@
+fileFormatVersion: 2
+guid: e176394e040f30f469a45bb5e8dc3960
+timeCreated: 1517062827
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Bone006(mirrored)
+    100002: Bone006(mirrored)(mirrored)
+    100004: Bone009(mirrored)
+    100006: Bone009(mirrored)(mirrored)
+    100008: Bone009(mirrored)(mirrored) 1
+    100010: Bone009(mirrored)(mirrored)(mirrored)
+    100012: Bone014
+    100014: Box002
+    100016: Circle001
+    100018: Corpo
+    100020: Dedo_L_B_1
+    100022: Dedo_L_B_2
+    100024: Dedo_L_F_L_1
+    100026: Dedo_L_F_L_2
+    100028: Dedo_L_F_R_1
+    100030: Dedo_L_F_R_2
+    100032: Dedo_R_B_1
+    100034: Dedo_R_B_2
+    100036: Dedo_R_F_L_1
+    100038: Dedo_R_F_L_2
+    100040: Dedo_R_F_R_1
+    100042: Dedo_R_F_R_2
+    100044: IK Chain001
+    100046: IK Chain002
+    100048: Pe_L
+    100050: Pe_L_1
+    100052: Pe_L_2
+    100054: Pe_R001
+    100056: Pe_R_1
+    100058: Pe_R_2
+    100060: Perna_L_003
+    100062: Perna_L_004
+    100064: Perna_L_1
+    100066: Perna_L_2
+    100068: Perna_R_003
+    100070: Perna_R_004
+    100072: Perna_R_1
+    100074: Perna_R_2
+    100076: Perna_R_END
+    100078: Perna_R_END(mirrored)
+    100080: //RootNode
+    100082: Rectangle003
+    100084: Rectangle004
+    400000: Bone006(mirrored)
+    400002: Bone006(mirrored)(mirrored)
+    400004: Bone009(mirrored)
+    400006: Bone009(mirrored)(mirrored)
+    400008: Bone009(mirrored)(mirrored) 1
+    400010: Bone009(mirrored)(mirrored)(mirrored)
+    400012: Bone014
+    400014: Box002
+    400016: Circle001
+    400018: Corpo
+    400020: Dedo_L_B_1
+    400022: Dedo_L_B_2
+    400024: Dedo_L_F_L_1
+    400026: Dedo_L_F_L_2
+    400028: Dedo_L_F_R_1
+    400030: Dedo_L_F_R_2
+    400032: Dedo_R_B_1
+    400034: Dedo_R_B_2
+    400036: Dedo_R_F_L_1
+    400038: Dedo_R_F_L_2
+    400040: Dedo_R_F_R_1
+    400042: Dedo_R_F_R_2
+    400044: IK Chain001
+    400046: IK Chain002
+    400048: Pe_L
+    400050: Pe_L_1
+    400052: Pe_L_2
+    400054: Pe_R001
+    400056: Pe_R_1
+    400058: Pe_R_2
+    400060: Perna_L_003
+    400062: Perna_L_004
+    400064: Perna_L_1
+    400066: Perna_L_2
+    400068: Perna_R_003
+    400070: Perna_R_004
+    400072: Perna_R_1
+    400074: Perna_R_2
+    400076: Perna_R_END
+    400078: Perna_R_END(mirrored)
+    400080: //RootNode
+    400082: Rectangle003
+    400084: Rectangle004
+    2100000: No Name
+    4300000: Perna_L_003
+    4300002: Perna_L_004
+    4300004: Perna_R_003
+    4300006: Perna_R_004
+    4300008: Pe_L
+    4300010: Pe_R001
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: Pe_L
+    13700002: Pe_R001
+    13700004: Perna_L_003
+    13700006: Perna_L_004
+    13700008: Perna_R_003
+    13700010: Perna_R_004
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
