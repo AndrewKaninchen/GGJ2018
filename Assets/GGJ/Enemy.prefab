@@ -100,7 +100,7 @@ GameObject:
   - component: {fileID: 114816111890966960}
   - component: {fileID: 195434829185655484}
   m_Layer: 0
-  m_Name: Player
+  m_Name: Enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -593,6 +593,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveStats: {fileID: 11400000, guid: 861836fb32edd3c498f4aaad90e5dc64, type: 2}
+  weaponStats: []
   genericStats: {fileID: 11400000, guid: ff522b03520e7e848b6dd19ebf04036d, type: 2}
 --- !u!114 &114605778003413676
 MonoBehaviour:

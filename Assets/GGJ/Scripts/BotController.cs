@@ -19,6 +19,7 @@ public class BotController : MonoBehaviour {
 
     private NavMeshAgent ai_navMeshAgent;
     private AIMoveController ai_AIMoveController;
+    private Gun p_playerGun;
     #endregion
     private GameObject p_cameraHolder;
 
@@ -32,6 +33,8 @@ public class BotController : MonoBehaviour {
         if (!ai_navMeshAgent) ai_navMeshAgent = GetComponent<NavMeshAgent>();
         if (!ai_AIMoveController) ai_AIMoveController = GetComponent<AIMoveController>();
         if (!p_playerController) p_playerController = GetComponent<PlayerController>();
+        
+        if (!p_playerGun) p_playerGun = GetComponentInChildren<Gun>();
 
         if (!p_cameraHolder) p_cameraHolder = transform.Find("CameraHolder").gameObject;
 
@@ -49,6 +52,7 @@ public class BotController : MonoBehaviour {
             p_playerController.enabled = true;
             p_cController.enabled = true;
             p_fpController.enabled = true;
+            p_playerGun.enabled = true;
             ai_navMeshAgent.enabled = false;
             ai_AIMoveController.enabled = false;
             currentController = ControlState.Player;
@@ -59,6 +63,7 @@ public class BotController : MonoBehaviour {
             p_playerController.enabled = false;
             p_cController.enabled = false;
             p_fpController.enabled = false;
+            p_playerGun.enabled = false;
             ai_navMeshAgent.enabled = true;
             ai_AIMoveController.enabled = true;
             currentController = ControlState.AI;
