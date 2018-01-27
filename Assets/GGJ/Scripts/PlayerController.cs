@@ -6,8 +6,8 @@ public class PlayerController : MonoBehaviour {
 
     private BotController botController;
     private BotStatsHolder stats;
-    [SerializeField]
-    private Transform weaponTransform;
+    //[SerializeField]
+    //private Transform weaponTransform;
 
     private Camera cam;
 

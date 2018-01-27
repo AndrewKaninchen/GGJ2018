@@ -10,6 +10,9 @@ public class Gun : WeaponController {
 
     private void Start()
     {
+        if(!muzzleFlash) muzzleFlash = GetComponentInChildren<ParticleSystem>();
+
+        if (!fpsCam) fpsCam = transform.parent.Find("CameraHolder").GetComponent<Camera>();
     }
 
     public override void Fire ()
