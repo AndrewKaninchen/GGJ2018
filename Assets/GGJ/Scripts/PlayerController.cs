@@ -23,9 +23,9 @@ public class PlayerController : MonoBehaviour {
     {
         if (Input.GetMouseButtonDown(1))
         {
-            Ray ray = cam.ScreenPointToRay(Input.mousePosition);
+            Ray ray = new Ray(cam.transform.position, cam.transform.forward);
             RaycastHit hit;
-            if (Physics.Raycast(ray, out hit))
+            if (Physics.Raycast(ray, out hit, 100f))
             {
                 if (hit.transform.gameObject.tag == "Bot")
                 {
