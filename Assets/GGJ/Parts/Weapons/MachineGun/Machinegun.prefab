@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 33691830583382088}
   - component: {fileID: 136712581715394810}
   - component: {fileID: 23548538264089384}
-  - component: {fileID: 114631665579736208}
+  - component: {fileID: 114141170399039426}
   m_Layer: 0
   m_Name: Machinegun
   m_TagString: Untagged
@@ -157,7 +157,7 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1317812337457892}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &114631665579736208
+--- !u!114 &114141170399039426
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -165,12 +165,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1191882525347086}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1c8a532b27b9b1945b6a99541d26c7a9, type: 3}
+  m_Script: {fileID: 11500000, guid: 68f946d7b8f367d4284643f6b9046206, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stats: {fileID: 11400000, guid: c642d08aa96b5b94da7edd9309bb2328, type: 2}
-  barrel: {fileID: 4687402339899862}
-  lineRenderer: {fileID: 0}
+  stats: {fileID: 0}
+  barrel: {fileID: 0}
 --- !u!120 &120629739350352486
 LineRenderer:
   m_ObjectHideFlags: 1

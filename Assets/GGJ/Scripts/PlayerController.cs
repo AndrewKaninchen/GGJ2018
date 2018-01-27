@@ -8,4 +8,13 @@ public class PlayerController : MonoBehaviour {
     {
         GameManager.currentPlayerControlledBot = gameObject;
     }
+
+    //private void Update()
+    //{
+    //    if(Input.GetMouseButtonDown(1))
+    //    {
+    //        Ray ray = new Ray()
+    //        RaycastHit hit;
+    //    }
+    //}
 }
