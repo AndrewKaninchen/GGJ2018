@@ -24,8 +24,8 @@ public class HealthManager : MonoBehaviour {
         }
 
         if (health <= 0f)
-        {
-            Destroy(Instantiate(deathEffect) as GameObject, 4);
+        {  
+            Destroy(Instantiate(deathEffect, transform.position, Quaternion.identity) as GameObject, 4);
             Die();
             score.Add(100);
         }
