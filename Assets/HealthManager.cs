@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class Target : MonoBehaviour {
+public class HealthManager : MonoBehaviour {
 
     public float health = 50f;
 

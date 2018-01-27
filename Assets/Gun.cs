@@ -33,7 +33,7 @@ public class Gun : MonoBehaviour {
         {
             Debug.Log(hit.transform);
 
-            Target target = hit.transform.GetComponent<Target>();
+            HealthManager target = hit.transform.GetComponent<HealthManager>();
             if (target != null)
             {
                 target.TakeDamage(damage);
