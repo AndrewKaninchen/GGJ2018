@@ -23,12 +23,12 @@ public class BotController : MonoBehaviour {
     private AIMoveController ai_AIMoveController;
     private WeaponController p_playerWeapon;
     #endregion
-    private GameObject p_cameraHolder;
+    private Camera p_camera;
 
     public bool startAsPlayer;
     private ControlState currentController;
 
-    private void Start()
+    private void Awake()
     {
         if (!p_cController) p_cController = GetComponent<CharacterController>();
         if (!p_fpController) p_fpController = GetComponent<FirstPersonController>();
@@ -37,21 +37,21 @@ public class BotController : MonoBehaviour {
         if (!p_playerController) p_playerController = GetComponent<PlayerController>();
         
 
-        if (!p_cameraHolder) p_cameraHolder = transform.Find("CameraHolder").gameObject;
+        if (!p_camera) p_camera = GetComponentInChildren<Camera>();
 
         if (startAsPlayer)
             ChangeState(ControlState.Player);
         else
             ChangeState(ControlState.AI);
-
-        SetMoveStats();
     }
+    
 
     public void ChangeState(ControlState state)
     {
         if (state == ControlState.Player)
         {
-            p_cameraHolder.SetActive(true);
+            p_camera.gameObject.SetActive(true);
+            //p_camera.enabled = true;
             p_playerController.enabled = true;
             p_cController.enabled = true;
             p_fpController.enabled = true;
@@ -61,7 +61,8 @@ public class BotController : MonoBehaviour {
         }
         else
         {
-            p_cameraHolder.SetActive(false);
+            p_camera.gameObject.SetActive(false);
+            // p_camera.enabled = false;
             p_playerController.enabled = false;
             p_cController.enabled = false;
             p_fpController.enabled = false;
@@ -73,7 +74,6 @@ public class BotController : MonoBehaviour {
 
     private void SetMoveStats()
     {
-        //ai_navMeshAgent.speed = p_fpController.m_WalkSpeed = statsHolder.moveStats.speed;
-        //p_fpController.m_RunSpeed = statsHolder.moveStats.speed *1.5f;
+        
     }
 }

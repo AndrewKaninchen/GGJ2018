@@ -1,11 +1,12 @@
 ﻿using System.Collections;
 using UnityEngine.UI;
 using UnityEngine;
+using TMPro;
 
 public class Score : MonoBehaviour {
 
     public int score = 0;
-    public Text text;
+    public TextMeshProUGUI text;
 
     private void Start()
     {

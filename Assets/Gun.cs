@@ -2,7 +2,7 @@
 
 public class Gun : WeaponController {
 
-    public float damage = 10f;
+    public float damage = 25f;
     public float range = 100f;
 
     public Camera fpsCam;

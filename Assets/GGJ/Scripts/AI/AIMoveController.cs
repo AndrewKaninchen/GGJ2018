@@ -23,10 +23,11 @@ public class AIMoveController : MonoBehaviour
 
     private void Awake()
     {
-        // if (!ccontroller) ccontroller = GetComponent<CharacterController>();
+
         if (!agent) agent = GetComponent<NavMeshAgent>();
         if (!stats) stats = GetComponent<BotStatsHolder>();
 
+        agent.speed = stats.moveStats.speed;
 
     }
 

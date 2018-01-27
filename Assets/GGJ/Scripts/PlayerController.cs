@@ -1,13 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityStandardAssets.Characters.FirstPerson;
 
 public class PlayerController : MonoBehaviour {
 
     private BotController botController;
     private BotStatsHolder stats;
-    //[SerializeField]
-    //private Transform weaponTransform;
+    [SerializeField]
+    private Transform weaponTransform;
+    private FirstPersonController firstPersonController;
 
     private Camera cam;
 
@@ -16,6 +18,11 @@ public class PlayerController : MonoBehaviour {
         botController = GetComponent<BotController>();
         stats = GetComponent<BotStatsHolder>();
         cam = GetComponentInChildren<Camera>();
+        firstPersonController = GetComponent<FirstPersonController>();
+
+        firstPersonController.m_WalkSpeed = stats.moveStats.speed;
+        firstPersonController.m_RunSpeed = stats.moveStats.speed * 1.5f;
+
     }
 
     public void OnEnable()
@@ -38,7 +45,7 @@ public class PlayerController : MonoBehaviour {
         {
             Ray ray = new Ray(cam.transform.position, cam.transform.forward);
             RaycastHit hit;
-            if (Physics.Raycast(ray, out hit, 100f))
+            if (Physics.SphereCast(ray, hitInfo: out hit, maxDistance: 100f, radius: .15f))
             {
                 if (hit.transform.gameObject.tag == "Bot")
                 {
@@ -47,7 +54,14 @@ public class PlayerController : MonoBehaviour {
                 }
             }
         }
-
-        //weaponTransform.LookAt(cam.transform.position + cam.transform.forward, Vector3.up);
+        //if (weaponTransform) {
+        //    var targetPosition = cam.transform.position + cam.transform.forward;
+        //    targetPosition = new Vector3(weaponTransform.position.x,
+        //                                targetPosition.y,
+        //                                weaponTransform.position.z);
+        //    weaponTransform.LookAt(targetPosition);
+        //    //weaponTransform.Rotate(new Vector3( 0f, 90f, 0f));
+        //}
+        //if (weaponTransform) weaponTransform.LookAt(cam.transform.position + cam.transform.forward, Vector3.up);
     }
 }

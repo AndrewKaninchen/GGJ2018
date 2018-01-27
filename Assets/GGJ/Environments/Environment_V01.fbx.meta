@@ -1,0 +1,180 @@
+fileFormatVersion: 2
+guid: cc4034df7ba19cc4e9b84f7f9211466f
+timeCreated: 1517057030
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Bridge_Piece
+    100002: Bridge_Wall
+    100004: Camera
+    100006: Corner
+    100008: Corner_IN
+    100010: Cube.001
+    100012: Cube.002
+    100014: Cube.003
+    100016: //RootNode
+    100018: Ramp
+    100020: Wall
+    100022: Wall_Large
+    400000: Bridge_Piece
+    400002: Bridge_Wall
+    400004: Camera
+    400006: Corner
+    400008: Corner_IN
+    400010: Cube.001
+    400012: Cube.002
+    400014: Cube.003
+    400016: //RootNode
+    400018: Ramp
+    400020: Wall
+    400022: Wall_Large
+    2000000: Camera
+    2300000: Bridge_Piece
+    2300002: Bridge_Wall
+    2300004: Corner
+    2300006: Corner_IN
+    2300008: Cube.001
+    2300010: Cube.002
+    2300012: Cube.003
+    2300014: Ramp
+    2300016: Wall
+    2300018: Wall_Large
+    3300000: Bridge_Piece
+    3300002: Bridge_Wall
+    3300004: Corner
+    3300006: Corner_IN
+    3300008: Cube.001
+    3300010: Cube.002
+    3300012: Cube.003
+    3300014: Ramp
+    3300016: Wall
+    3300018: Wall_Large
+    4300000: Bridge_Piece
+    4300002: Wall_Large
+    4300004: Ramp
+    4300006: Corner_IN
+    4300008: Corner
+    4300010: Bridge_Wall
+    4300012: Cube.002
+    4300014: Cube.003
+    4300016: Cube.001
+    4300018: Wall
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Bridge_Piece
+    second: {fileID: 2100000, guid: a4576f6b8e25d214fab99e48780f1b67, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Bridge_Wall
+    second: {fileID: 2100000, guid: d5593d74eb873be4b93311464e637b83, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Corner
+    second: {fileID: 2100000, guid: ef75dd47d61c4e54291e3820f4bb02a1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Corner_IN
+    second: {fileID: 2100000, guid: 344207b27898fd447a50f67ae08651da, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: No Name
+    second: {fileID: 2100000, guid: 8475e6e9956c8d34ca1b432f4e825324, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Ramp
+    second: {fileID: 2100000, guid: 11635cdebedf7a046a910e6b3820c72f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wall
+    second: {fileID: 2100000, guid: ccd56957d929691469e6b507fb6b805c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wall_Large
+    second: {fileID: 2100000, guid: 0c100cdf47155594a8a3009170eb799c, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
