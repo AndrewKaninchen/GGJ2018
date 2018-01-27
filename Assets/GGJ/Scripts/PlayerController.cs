@@ -5,12 +5,14 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour {
 
     private BotController botController;
+    private BotStatsHolder stats;
 
     private Camera cam;
 
     private void Start()
     {
         botController = GetComponent<BotController>();
+        stats = GetComponent<BotStatsHolder>();
         cam = GetComponentInChildren<Camera>();
     }
 
@@ -21,6 +23,15 @@ public class PlayerController : MonoBehaviour {
 
     private void Update()
     {
+        if (Input.GetMouseButtonDown(0))
+        {
+            foreach (WeaponController w in stats.weapons)
+            {
+                w.Fire();
+            }
+
+        }
+
         if (Input.GetMouseButtonDown(1))
         {
             Ray ray = new Ray(cam.transform.position, cam.transform.forward);

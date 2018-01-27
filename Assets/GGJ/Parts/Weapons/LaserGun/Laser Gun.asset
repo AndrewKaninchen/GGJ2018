@@ -11,8 +11,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f50a051eed0982045991fa839b691df9, type: 3}
   m_Name: Laser Gun
   m_EditorClassIdentifier: 
-  damage: 1.23
+  damage: 10
   range: 39.06
   cooldown: 0.4
-  beamWidth: 0.12
+  beamWidth: 0.08
   beamDuration: 0.3

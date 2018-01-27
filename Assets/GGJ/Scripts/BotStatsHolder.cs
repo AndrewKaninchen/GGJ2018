@@ -5,6 +5,7 @@ using UnityEngine;
 public class BotStatsHolder : MonoBehaviour
 {
     public LegStats moveStats;
-    public WeaponStats[] weaponStats;
     public GenericStats genericStats;
+
+    public WeaponController[] weapons;
 }

@@ -20,35 +20,32 @@ public class LaserGunController : WeaponController
 
     public override void Fire()
     {
-        Ray ray = new Ray(barrel.position, barrel.forward * stats.range);
-        RaycastHit hit;
-        if (Physics.Raycast(ray, out hit))
+        if (!isInCooldown)
         {
-            lineRenderer.SetPositions(new Vector3[] { barrel.position, hit.point });
-        }
-        else
-            lineRenderer.SetPositions(new Vector3[] { barrel.position, barrel.forward * stats.range });
-    }
-   
-    public void DrawBeam()
-    {
-        
+            lineRenderer.enabled = true;
+            beamRemainingTime = stats.beamDuration;
+            isInCooldown = true;
 
-        while (beamRemainingTime > 0f)
-        {
-            
+            Ray ray = new Ray(barrel.position, barrel.forward * stats.range);
+            RaycastHit hit;
+            if (Physics.Raycast(ray, out hit))
+            {
+                lineRenderer.SetPositions(new Vector3[] { barrel.position, hit.point });
+            }
+            else
+                lineRenderer.SetPositions(new Vector3[] { barrel.position, barrel.forward * stats.range });
+
+            var healthManager = hit.transform.GetComponent<HealthManager>();
+            if(healthManager)
+            {
+                healthManager.TakeDamage(stats.damage);
+            }
         }
     }
 
     public void Update()
     {
-        if(!isInCooldown && Input.GetKeyDown(KeyCode.K))
-        {
-            lineRenderer.enabled = true;
-            beamRemainingTime = stats.beamDuration;
-            isInCooldown = true;
-            Fire();
-        }
+        
         
         if(beamRemainingTime > 0)
         {
@@ -56,10 +53,12 @@ public class LaserGunController : WeaponController
 
             lineRenderer.widthMultiplier = stats.beamWidth * beamRemainingTime / stats.beamDuration;
             beamRemainingTime -= Time.deltaTime;
-            //var emitParams = new ParticleSystem.EmitParams();
-            //emitParams.position = lineRenderer.GetPosition(1);
+            var emitParams = new ParticleSystem.EmitParams();
+            emitParams.position = lineRenderer.GetPosition(1);
+            //emitParams.startColor = Color.red;
+            emitParams.startSize = 0.8f;
 
-            //hitParticles.Emit(emitParams,1);
+            hitParticles.Emit(emitParams,15);
         }
         else
         {
