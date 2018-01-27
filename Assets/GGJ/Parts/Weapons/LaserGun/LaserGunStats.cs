@@ -8,4 +8,8 @@ public class LaserGunStats : WeaponStats
     public float damage;
     public float range;
     public float cooldown;
+
+
+    public float beamWidth;
+    public float beamDuration;
 }

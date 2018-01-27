@@ -13,4 +13,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 1.23
   range: 39.06
-  cooldown: 1
+  cooldown: 0.4
+  beamWidth: 0.12
+  beamDuration: 0.3
