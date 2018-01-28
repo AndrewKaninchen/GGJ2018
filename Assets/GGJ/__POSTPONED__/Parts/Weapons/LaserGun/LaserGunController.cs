@@ -6,16 +6,23 @@ public class LaserGunController : WeaponController
 {
     public LaserGunStats stats;
     public Transform barrel;
+    public Camera fpsCam;
 
     public ParticleSystem hitParticles;
     public LineRenderer lineRenderer;
     private bool isInCooldown;
 
+
+
     private float beamRemainingTime = 1f;
+
+    private bool isAI = false;
 
     private void Start()
     {
         lineRenderer = GetComponentInChildren<LineRenderer>();
+        //lineRenderer.startWidth = 0f;
+        //lineRenderer.endWidth = 0.2f;
     }
 
     public override void Fire()
@@ -26,9 +33,12 @@ public class LaserGunController : WeaponController
             beamRemainingTime = stats.beamDuration;
             isInCooldown = true;
 
-            Ray ray = new Ray(barrel.position, barrel.forward * stats.range);
+            Ray ray = isAI ? 
+                new Ray(barrel.position, barrel.forward) : 
+                new Ray(fpsCam.transform.position, fpsCam.transform.forward );
             RaycastHit hit;
-            if (Physics.Raycast(ray, out hit))
+            LayerMask layerMask = LayerMask.GetMask("Default", isAI ? "Player" : "AI");
+            if (Physics.Raycast(ray, maxDistance: stats.range, layerMask: layerMask, hitInfo: out hit))
             {
                 lineRenderer.SetPositions(new Vector3[] { barrel.position, hit.point });
             }
@@ -56,7 +66,7 @@ public class LaserGunController : WeaponController
             var emitParams = new ParticleSystem.EmitParams();
             emitParams.position = lineRenderer.GetPosition(1);
             //emitParams.startColor = Color.red;
-            emitParams.startSize = 0.8f;
+            //emitParams.startSize = 0.8f;
 
             hitParticles.Emit(emitParams,15);
         }

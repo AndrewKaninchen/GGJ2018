@@ -1,9 +1,11 @@
 ﻿using System;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class HealthManager : MonoBehaviour {
 
-    public float health = 50f;
+    public float maxHealth = 50f;
+    private float currentHealth = 50f;
     public Score score;
 
     public GameObject damageAnimation;
@@ -16,19 +18,23 @@ public class HealthManager : MonoBehaviour {
         score = GameObject.FindGameObjectsWithTag("Score")[0].GetComponent<Score>();
     }
 
+    private void Update()
+    {
+    }
+
     public void TakeDamage (float amount)
     {
-        health -= amount;
+        currentHealth -= amount;
         Debug.Log("DAMAGE!");
 
-        if (health <= 0f)
+        if (currentHealth <= 0f)
         {
             Destroy(Instantiate(deathEffect, transform.position, Quaternion.identity) as GameObject, 4);
             Die();
             score.Add(100);
         }
 
-        else if (health <= 30)
+        else if (currentHealth <= 30)
         {
             damageAnimation.SetActive(true);
         }
