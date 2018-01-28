@@ -115,6 +115,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4277631950825704}
+  - component: {fileID: 65319014826604188}
   m_Layer: 0
   m_Name: Tanker
   m_TagString: Untagged
@@ -361,7 +362,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1079281904733036}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 9.9, y: 1.13, z: 2.0560627}
+  m_LocalPosition: {x: 9.083317, y: 0.51, z: -0.49136615}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children:
   - {fileID: 4416687268132574}
@@ -1157,6 +1158,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!65 &65319014826604188
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1328185842197236}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.37, y: 3.33, z: 4.03}
+  m_Center: {x: -0.06, y: 0, z: 0.08}
 --- !u!81 &81544674233589788
 AudioListener:
   m_ObjectHideFlags: 1
