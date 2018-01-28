@@ -21,17 +21,19 @@ public class HealthManager : MonoBehaviour {
         health -= amount;
         Debug.Log("DAMAGE!");
 
-        if (health <= 30)
-        {
-            damageAnimation.SetActive(true);
-        }
-
         if (health <= 0f)
-        {  
+        {
             Destroy(Instantiate(deathEffect, transform.position, Quaternion.identity) as GameObject, 4);
             Die();
             score.Add(100);
         }
+
+        else if (health <= 30)
+        {
+            damageAnimation.SetActive(true);
+        }
+
+        
 
     }
 
@@ -40,7 +42,7 @@ public class HealthManager : MonoBehaviour {
         onDeath();
         //tem que consertar essa porra quando tiver mais tipo de bicho
         AIDirector.activeWalkers--;
-        Debug.Log(AIDirector.activeWalkers);
+        //Debug.Log(AIDirector.activeWalkers);
         Destroy(gameObject);
         
     }

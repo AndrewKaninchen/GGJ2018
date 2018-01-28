@@ -8,7 +8,8 @@ public class AIMoveController : MonoBehaviour
     enum States
     {
         Patrol,
-        Pursue
+        Pursue,
+        Drunk
     }
 
     [SerializeField]
@@ -22,7 +23,7 @@ public class AIMoveController : MonoBehaviour
     private GameObject target;
     private States currentState;
 
-
+    private float drunkness;
 
     private void Awake()
     {
@@ -67,6 +68,20 @@ public class AIMoveController : MonoBehaviour
                 }
                 agent.SetDestination(target.transform.position);
                 var movement = agent.desiredVelocity;
+
+                drunkness += Random.Range(0f, 3f) * Time.deltaTime;
+                if(drunkness > 5f)
+                {
+                    agent.SetDestination(RandomNavmeshLocation(drunkness*15f));
+                    currentState = States.Drunk;
+                }
+                break;
+            case States.Drunk:
+                drunkness -= Random.Range(0f, .3f) * Time.deltaTime;
+                if(drunkness < 2f || agent.remainingDistance < .5f)
+                {
+                    currentState = States.Pursue;
+                }
                 break;
         }
 
@@ -83,6 +98,19 @@ public class AIMoveController : MonoBehaviour
         else
             Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, stats.genericStats.detectionRadius);
+    }
+
+    public Vector3 RandomNavmeshLocation(float radius)
+    {
+        Vector3 randomDirection = Random.insideUnitSphere * radius;
+        randomDirection += transform.position;
+        NavMeshHit hit;
+        Vector3 finalPosition = Vector3.zero;
+        if (NavMesh.SamplePosition(randomDirection, out hit, radius, 1))
+        {
+            finalPosition = hit.position;
+        }
+        return finalPosition;
     }
 
 }

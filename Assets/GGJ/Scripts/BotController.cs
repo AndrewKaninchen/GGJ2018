@@ -62,7 +62,7 @@ public class BotController : MonoBehaviour {
             ai_navMeshAgent.enabled = false;
             ai_AIMoveController.enabled = false;
             currentController = ControlState.Player;
-            gameObject.layer = LayerMask.NameToLayer("Player");
+            SetLayerRecursively(gameObject, LayerMask.NameToLayer("Player"));
         }
         else
         {
@@ -74,7 +74,7 @@ public class BotController : MonoBehaviour {
             ai_navMeshAgent.enabled = true;
             ai_AIMoveController.enabled = true;
             currentController = ControlState.AI;
-            gameObject.layer = LayerMask.NameToLayer("AI");
+            SetLayerRecursively(gameObject, LayerMask.NameToLayer("AI"));
         }
     }
 
@@ -91,6 +91,15 @@ public class BotController : MonoBehaviour {
             GameObject ui = GameManager.Instance.UI;
             ui.transform.Find("u dead").gameObject.SetActive(true);
             ui.transform.Find("Score").gameObject.SetActive(false);
+        }
+    }
+
+    private void SetLayerRecursively(GameObject go, LayerMask layer)
+    {
+        go.layer = layer;
+        foreach (Transform gc in go.transform)
+        {
+            SetLayerRecursively(gc.gameObject, layer);
         }
     }
 }
