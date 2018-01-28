@@ -33,6 +33,7 @@ public class AIMoveController : MonoBehaviour
 
         agent.speed = stats.moveStats.speed;
 
+        drunkness = Random.Range(3f, -4f);
     }
 
     private void OnEnable()
@@ -70,14 +71,14 @@ public class AIMoveController : MonoBehaviour
                 var movement = agent.desiredVelocity;
 
                 drunkness += Random.Range(0f, 3f) * Time.deltaTime;
-                if(drunkness > 5f)
+                if (drunkness > stats.alcoholTolerance)
                 {
-                    agent.SetDestination(RandomNavmeshLocation(drunkness*15f));
+                    agent.SetDestination(RandomNavmeshLocation(drunkness*3f));
                     currentState = States.Drunk;
                 }
                 break;
             case States.Drunk:
-                drunkness -= Random.Range(0f, .3f) * Time.deltaTime;
+                drunkness -= Random.Range(1f, 2f) * Time.deltaTime;
                 if(drunkness < 2f || agent.remainingDistance < .5f)
                 {
                     currentState = States.Pursue;
