@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class MissileEffects : MonoBehaviour {
 
+    public float damage = 10f;
+
+    public GameObject explosionEffect;
+
 	// Use this for initialization
 	void Start () {
 		
@@ -18,11 +22,32 @@ public class MissileEffects : MonoBehaviour {
     {
         Debug.Log("a:");
         Debug.Log(collision);
+
+        HealthManager target = collision.transform.GetComponent<HealthManager>();
+        Debug.Log(target);
+        if (target != null)
+        {
+            target.TakeDamage(damage);
+            Explode();
+        }
+
         /*foreach (ContactPoint contact in collision.contacts)
         {
             Debug.Log(contact.point);
             //Debug.Log(contact.point, contact.normal, Color.white);
         }*/
+    }
+
+    void Explode()
+    {
+        //Show effect
+        Destroy(Instantiate(explosionEffect, transform.position, transform.rotation), 2f);
+
+
+        //Get nearby objects
+
+        //Remove missile
+        Destroy(gameObject);
     }
 
 }

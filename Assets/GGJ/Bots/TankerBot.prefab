@@ -492,7 +492,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1079281904733036}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.182565, y: 1, z: -1.1012826}
+  m_LocalPosition: {x: 8.182565, y: 0.6, z: -1.1012826}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children:
   - {fileID: 4416687268132574}
@@ -640,7 +640,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1163258987974376}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.86553645, y: 1.4009645, z: 1.1515328}
+  m_LocalPosition: {x: -0.86553645, y: 1.4009645, z: 3.7}
   m_LocalScale: {x: 1, y: 1.000252, z: 1.000252}
   m_Children: []
   m_Father: {fileID: 4277631950825704}
@@ -1489,7 +1489,7 @@ Rigidbody:
   m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
@@ -1519,7 +1519,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3.37, y: 2.48, z: 3.49}
+  m_Size: {x: 3.37, y: 2.48, z: 3.71}
   m_Center: {x: -0.06, y: 0.27, z: 0.39}
 --- !u!81 &81544674233589788
 AudioListener:
@@ -1711,7 +1711,7 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-  m_UseHeadBob: 1
+  m_UseHeadBob: 0
   m_HeadBob:
     HorizontalBobRange: 0.1
     VerticalBobRange: 0.1
@@ -1783,7 +1783,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fbb2c20bebc5fe94fa3e5f47eb032daf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startAsPlayer: 1
+  startAsPlayer: 0
 --- !u!114 &114642209097122354
 MonoBehaviour:
   m_ObjectHideFlags: 1

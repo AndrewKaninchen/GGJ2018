@@ -23,7 +23,7 @@ public class Spawner : MonoBehaviour
     {
         yield return new WaitForSeconds(interval);
         AIDirector.activeWalkers++;
-        Debug.Log(AIDirector.activeWalkers);
+        //Debug.Log(AIDirector.activeWalkers);
         Spawn();
     }
 
