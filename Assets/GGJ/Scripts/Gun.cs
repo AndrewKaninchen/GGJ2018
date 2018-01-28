@@ -8,6 +8,9 @@ public class Gun : WeaponController {
     public Camera fpsCam;
     public ParticleSystem muzzleFlash;
 
+    //Temporário, depois trocar pra usar o controller ou sei lá
+    private bool isAI = false;
+
     private void Start()
     {
         if(!muzzleFlash) muzzleFlash = GetComponentInChildren<ParticleSystem>();
@@ -21,7 +24,8 @@ public class Gun : WeaponController {
         muzzleFlash.Play();
 
         RaycastHit hit;
-        if (Physics.Raycast(fpsCam.transform.position, fpsCam.transform.forward, out hit, range))
+        LayerMask layerMask = LayerMask.GetMask("Default", isAI ? "Player" : "AI");
+        if (Physics.Raycast(fpsCam.transform.position, fpsCam.transform.forward, out hit, range, layerMask: layerMask.value))
         {
             Debug.Log(hit.transform);
 

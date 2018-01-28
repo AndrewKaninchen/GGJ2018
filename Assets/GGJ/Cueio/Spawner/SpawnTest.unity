@@ -2618,11 +2618,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   walkerSpawnerParams:
-    timeBetweenWaves: 3
-    botsPerWave: 10
-    spawnPointsUsedPerWave: 3
-    maxActiveBots: 15
-    samePointSpawnInterval: 0.3
+    timeBetweenWaves: 7.67
+    botsPerWave: 11
+    spawnPointsUsedPerWave: 9
+    maxActiveBots: 12
+    samePointSpawnInterval: 0.12
   walkerSpawnPoints:
   - {fileID: 457600609}
   - {fileID: 1098608692}
@@ -2653,7 +2653,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4fdbd4a3aea201b468e55ae7890ffb45, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DEATHCamera: {fileID: 0}
+  DEATHCamera: {fileID: 85332236}
   UI: {fileID: 1566911149}
   firstControlledBot: {fileID: 1101626872}
 --- !u!4 &1821558310

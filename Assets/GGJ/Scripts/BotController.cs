@@ -62,6 +62,7 @@ public class BotController : MonoBehaviour {
             ai_navMeshAgent.enabled = false;
             ai_AIMoveController.enabled = false;
             currentController = ControlState.Player;
+            gameObject.layer = LayerMask.NameToLayer("Player");
         }
         else
         {
@@ -73,6 +74,7 @@ public class BotController : MonoBehaviour {
             ai_navMeshAgent.enabled = true;
             ai_AIMoveController.enabled = true;
             currentController = ControlState.AI;
+            gameObject.layer = LayerMask.NameToLayer("AI");
         }
     }
 

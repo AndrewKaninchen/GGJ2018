@@ -45,7 +45,7 @@ public class PlayerController : MonoBehaviour {
         {
             Ray ray = new Ray(cam.transform.position, cam.transform.forward);
             RaycastHit hit;
-            if (Physics.SphereCast(ray, hitInfo: out hit, maxDistance: 100f, radius: .15f))
+            if (Physics.SphereCast(ray, hitInfo: out hit, maxDistance: 100f, radius: .15f, layerMask: LayerMask.GetMask("Default", "AI")))
             {
                 if (hit.transform.gameObject.tag == "Bot")
                 {
