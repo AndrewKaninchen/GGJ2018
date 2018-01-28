@@ -15,7 +15,10 @@ public class AIMoveController : MonoBehaviour
     private BotStatsHolder stats;
     [SerializeField]
     private NavMeshAgent agent;
-    
+
+    private Animator anim;
+
+
     private GameObject target;
     private States currentState;
 
@@ -23,7 +26,7 @@ public class AIMoveController : MonoBehaviour
 
     private void Awake()
     {
-
+        if (!anim) anim = GetComponentInChildren<Animator>();
         if (!agent) agent = GetComponent<NavMeshAgent>();
         if (!stats) stats = GetComponent<BotStatsHolder>();
 
@@ -66,7 +69,11 @@ public class AIMoveController : MonoBehaviour
                 var movement = agent.desiredVelocity;
                 break;
         }
-        
+
+        if (agent.velocity.sqrMagnitude > Mathf.Epsilon)
+            anim.SetBool("Walking", true);
+        else
+            anim.SetBool("Walking", false);
     }
 
     private void OnDrawGizmosSelected()
