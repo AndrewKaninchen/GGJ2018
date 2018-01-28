@@ -41,15 +41,18 @@ public class LaserGunController : WeaponController
             if (Physics.Raycast(ray, maxDistance: stats.range, layerMask: layerMask, hitInfo: out hit))
             {
                 lineRenderer.SetPositions(new Vector3[] { barrel.position, hit.point });
+
+                var healthManager = hit.transform.GetComponent<HealthManager>();
+                if (healthManager)
+                {
+                    healthManager.TakeDamage(stats.damage);
+                }
+
             }
             else
-                lineRenderer.SetPositions(new Vector3[] { barrel.position, barrel.forward * stats.range });
+                lineRenderer.SetPositions(new Vector3[] { ray.origin, ray.origin + ray.direction * stats.range });
 
-            var healthManager = hit.transform.GetComponent<HealthManager>();
-            if(healthManager)
-            {
-                healthManager.TakeDamage(stats.damage);
-            }
+            
         }
     }
 

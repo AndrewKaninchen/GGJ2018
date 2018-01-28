@@ -13,9 +13,10 @@ public class AimIKSolver : MonoBehaviour {
     private void Update ()
     {
         var lookPos = target.position;
-        lookPos.y = bodyTransform.position.y;
+        lookPos.y = 0f;
 
-        bodyTransform.rotation = Quaternion.LookRotation(bodyTransform.position + lookPos, Vector3.up);
+        bodyTransform.LookAt(lookPos);
+      // bodyTransform.rotation = Quaternion.LookRotation(bodyTransform.position + lookPos, Vector3.up);
         bodyTransform.Rotate(0f, 90f, 270f);
 
         //lookPos = target.position;
