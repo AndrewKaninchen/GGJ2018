@@ -739,11 +739,6 @@ Transform:
   m_Father: {fileID: 211254285}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1089754579 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1106208118693294, guid: 8edf05e55bb3c36458d3352b8c1f98d4,
-    type: 2}
-  m_PrefabInternal: {fileID: 1472350380}
 --- !u!1 &1098608691
 GameObject:
   m_ObjectHideFlags: 0
@@ -1187,7 +1182,7 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1377636813}
---- !u!1001 &1472350380
+--- !u!1001 &1419887300
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -1196,15 +1191,15 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4927756989248792, guid: 8edf05e55bb3c36458d3352b8c1f98d4, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 4.74
+      value: 6.1133604
       objectReference: {fileID: 0}
     - target: {fileID: 4927756989248792, guid: 8edf05e55bb3c36458d3352b8c1f98d4, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0.42
+      value: 1.13
       objectReference: {fileID: 0}
     - target: {fileID: 4927756989248792, guid: 8edf05e55bb3c36458d3352b8c1f98d4, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 4.76
+      value: 2.0560627
       objectReference: {fileID: 0}
     - target: {fileID: 4927756989248792, guid: 8edf05e55bb3c36458d3352b8c1f98d4, type: 2}
       propertyPath: m_LocalRotation.x
@@ -1224,11 +1219,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4927756989248792, guid: 8edf05e55bb3c36458d3352b8c1f98d4, type: 2}
       propertyPath: m_RootOrder
-      value: 4
+      value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 1106208118693294, guid: 8edf05e55bb3c36458d3352b8c1f98d4, type: 2}
-      propertyPath: m_Name
-      value: WalkerBot (1)
+    - target: {fileID: 1167022241937842, guid: 8edf05e55bb3c36458d3352b8c1f98d4, type: 2}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8edf05e55bb3c36458d3352b8c1f98d4, type: 2}
@@ -1323,7 +1318,7 @@ RectTransform:
   - {fileID: 625120706}
   - {fileID: 1377636814}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -1475,7 +1470,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1 &1821558307
 GameObject:
@@ -1543,7 +1538,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DEATHCamera: {fileID: 85332236}
   UI: {fileID: 1566911149}
-  firstControlledBot: {fileID: 1089754579}
+  firstControlledBot: {fileID: 0}
 --- !u!4 &1821558310
 Transform:
   m_ObjectHideFlags: 0
@@ -1557,7 +1552,7 @@ Transform:
   - {fileID: 211254285}
   - {fileID: 85332237}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1943175239
 GameObject:
