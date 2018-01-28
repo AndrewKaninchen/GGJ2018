@@ -22,6 +22,8 @@ public class BotController : MonoBehaviour {
     private NavMeshAgent ai_navMeshAgent;
     private AIMoveController ai_AIMoveController;
     private WeaponController p_playerWeapon;
+
+    private HealthManager healthManager;
     #endregion
     private Camera p_camera;
 
@@ -35,7 +37,9 @@ public class BotController : MonoBehaviour {
         if (!ai_navMeshAgent) ai_navMeshAgent = GetComponent<NavMeshAgent>();
         if (!ai_AIMoveController) ai_AIMoveController = GetComponent<AIMoveController>();
         if (!p_playerController) p_playerController = GetComponent<PlayerController>();
-        
+        if (!healthManager) healthManager = GetComponent<HealthManager>();
+
+        healthManager.onDeath += () => GameOver();
 
         if (!p_camera) p_camera = GetComponentInChildren<Camera>();
 
@@ -75,5 +79,15 @@ public class BotController : MonoBehaviour {
     private void SetMoveStats()
     {
         
+    }
+
+    private void GameOver()
+    {
+        if(currentController == ControlState.Player)
+        {
+            GameObject ui = GameManager.Instance.UI;
+            ui.transform.Find("u dead").gameObject.SetActive(true);
+            ui.transform.Find("Score").gameObject.SetActive(false);
+        }
     }
 }

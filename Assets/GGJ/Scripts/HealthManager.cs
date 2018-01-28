@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 public class HealthManager : MonoBehaviour {
 
@@ -7,6 +8,8 @@ public class HealthManager : MonoBehaviour {
 
     public GameObject damageAnimation;
     public GameObject deathEffect;
+
+    public Action onDeath;
 
     private void Awake()
     {
@@ -38,7 +41,7 @@ public class HealthManager : MonoBehaviour {
         AIDirector.activeWalkers--;
         Debug.Log(AIDirector.activeWalkers);
         Destroy(gameObject);
-
+        onDeath();
     }
 
 }
