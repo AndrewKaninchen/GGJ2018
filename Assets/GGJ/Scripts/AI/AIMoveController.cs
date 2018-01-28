@@ -43,6 +43,8 @@ public class AIMoveController : MonoBehaviour
 
     private void Update()
     {
+        if (GameManager.currentPlayerControlledBot == null)
+            return;
         switch (currentState)
         {
             case States.Patrol:

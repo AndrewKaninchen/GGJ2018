@@ -37,11 +37,12 @@ public class HealthManager : MonoBehaviour {
 
     void Die()
     {
+        onDeath();
         //tem que consertar essa porra quando tiver mais tipo de bicho
         AIDirector.activeWalkers--;
         Debug.Log(AIDirector.activeWalkers);
         Destroy(gameObject);
-        onDeath();
+        
     }
 
 }

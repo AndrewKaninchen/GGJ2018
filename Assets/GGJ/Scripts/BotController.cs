@@ -85,6 +85,7 @@ public class BotController : MonoBehaviour {
     {
         if(currentController == ControlState.Player)
         {
+            GameManager.Instance.DEATHCamera.SetActive(true);
             GameObject ui = GameManager.Instance.UI;
             ui.transform.Find("u dead").gameObject.SetActive(true);
             ui.transform.Find("Score").gameObject.SetActive(false);
